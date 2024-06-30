@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+   <head>
+<!--网站编码-->
+         <meta charset="UTF-8">
+<!--网站标题-->
+         <title>MyHome</title>
+<!--引入外部CSS-->
+         <link rel="stylesheet" type="text/css" href="me.css">
+<!--引入收藏图标-->
+         <link rel="icon" href="favicon.ico" type="image/x-icon">
+<!--显示当前时间JS程序START-->
+         <script>
+            function displayTime() {
+                var currentTime = new Date();
+                var hours = currentTime.getHours();
+                var minutes = currentTime.getMinutes();
+                var seconds = currentTime.getSeconds();
+                // 如果月份、日期、小时、分钟或秒数小于10，则在前面添加0以保持格式的一致性
+                hours = hours < 10 ? '0' + hours : hours;
+                minutes = minutes < 10 ? '0' + minutes : minutes;
+                seconds = seconds < 10 ? '0' + seconds : seconds;
+                var timeString =hours + ':' + minutes + ':' + seconds;
+                document.getElementById('timeDisplay').innerHTML = timeString;
+            }
+            </script>
+            <script>
+                setInterval(displayTime, 1000); // 每1000毫秒（即1秒）更新一次时间
+            </script>
+<!--显示当前时间JS程序END-->
+   </head>
+
+   <body>
+     <div id="homewrap">
+      <!--网站TOP显示START-->
+      <div id="leader">
+         <!--网站TOP左侧显示小站风格文字-->
+         <div class="hometext">
+         <b>Home is, warm and soft.</b>
+         </div>
+         <!--网站TOP右侧显示当前时间-->
+         <div id="timeDisplay" class="hometime">
+         </div>
+      </div>
+      <!--网站TOP显示END-->
+      <!--网站LOGO显示960*350-->
+      <div class="logo">
+         <img src="img/logo.jpg" alt="">
+      </div>
+      <!--引入百度搜索-->
+      <div class="mybaidu">
+            <form  action="https://www.baidu.com/s" target="blank">
+               <input type="text" class="baiduform" name="wd">
+               <input type="submit" class="button" value="Baidu">
+            </form>
+      </div>
+      <!--导航1我的博客-->
+      <div class="nav1">
+         <div class="nav-text"><h3><b>Blogs</b></h3></div>
+      </div>
+      <div id="navimg">
+         <a href="https://blog.xztime.wang:12107" target="blank"><img src="img/myblog.png" width="64px" height="64px" alt=""><br>Me</a>
+         <a href="https://xiaoya.myhome007.com:12107" target="blank"><img src="img/xiaoya.png" width="64px" height="64px" alt=""><br>Xiaoya</a>
+         <a href="https://blog.xztime.wang:12107" target="blank"><img src="img/xiaoyang.png" width="64px" height="64px" alt=""><br>Xiaoyang</a>
+         <a href="https://blog.xztime.wang:12107" target="blank"><img src="img/xiaofang.png" width="64px" height="64px" alt=""><br>Xiaofang</a>
+         <a href="https://blog.xztime.wang:12107" target="blank"><img src="img/home.png" width="64px" height="64px" alt=""><br>Home</a>
+         <a href="http://www.xztime.top" target="blank"><img src="img/home.png" width="64px" height="64px" alt=""><br>Mynav</a>
+      </div>
+      <!--导航2常用服务-->
+      <div class="nav2">
+         <div class="nav-text"><h3><b>Apps</b></h3></div>
+      </div>
+      <div id="navimg2">
+         <a href="https://film.myhome007.com:12107" target="blank"><img src="img/jellyfin.png" width="64px" height="64px" alt=""><br>jelly</a>
+         <a href="https://163.myhome007.com:12107" target="blank"><img src="img/163.png" width="64px" height="64px" alt=""><br>music</a>
+         <a href="https://pan.myhome007.com:12107" target="blank"><img src="img/alist.png" width="64px" height="64px" alt=""><br>mypan</a>
+         <a href="https://book.myhome007.com:12107" target="blank"><img src="img/book.png" width="64px" height="64px" alt=""><br>books</a>
+         <a href="https://video.myhome007.com:12107" target="blank"><img src="img/video.png" width="64px" height="64px" alt=""><br>dsvideo</a>
+         <a href="https://music.myhome007.com:12107" target="blank"><img src="img/music.png" width="64px" height="64px" alt=""><br>dsmusic</a>
+         <a href="https://ha.myhome007.com:12107" target="blank"><img src="img/ha.png" width="64px" height="64px" alt=""><br>ha007</a>
+         <a href="https://qb.myhome007.com:12107" target="blank"><img src="img/qb.png" width="64px" height="64px" alt=""><br>qbdown</a>
+         <a href="https://film.xztime.wang:12107" target="blank"><img src="img/jellyfin.png" width="64px" height="64px" alt=""><br>jelly(ipv6)</a>
+         <a href="https://qb.xztime.wang:12107" target="blank"><img src="img/qb.png" width="64px" height="64px" alt=""><br>qb(ipv6)</a>
+      </div>
+      <!--导航3收藏网站-->
+      <div class="nav3">
+         <div class="nav-text"><h3><b>Navs</b></h3></div>
+      </div>
+      <div id="navimg2">
+         <a href="https://wp.gxnas.com/" target="blank"><img src="img/gas.png" width="64px" height="64px" alt=""><br>GXnas</a>
+         <a href="https://imnks.com/" target="blank"><img src="img/imnks.jpg" width="64px" height="64px" alt=""><br>imnks</a>
+         <a href="http://laodong2.cnscum.com:8994/" target="blank"><img src="img/scum.jpg" width="64px" height="64px" alt=""><br>scum</a>
+         <a href="https://bbs.hassbian.com/" target="blank"><img src="img/ha.png" width="64px" height="64px" alt=""><br>ha-bbs</a>
+         <a href="https://pipuwong.com/en/free-icons-for-self-hosted" target="blank"><img src="img/icons.png" width="64px" height="64px" alt=""><br>icons</a>
+         <a href="https://siriling.github.io/my-icons/dist/#/" target="blank"><img src="img/icons.png" width="64px" height="64px" alt=""><br>icons2</a>
+         <a href="https://p3terx.com/" target="blank"><img src="img/p3.png" width="64px" height="64px" alt=""><br>p3terx</a>
+         <a href="https://ghp.p3terx.com/" target="blank"><img src="img/git.png" width="64px" height="64px" alt=""><br>github</a>
+         <a href="https://www.awyyds.fun/" target="blank"><img src="img/aw.png" width="64px" height="64px" alt=""><br>awyyds</a>
+         <a href="https://hali.life/" target="blank"><img src="img/half.png" width="64px" height="64px" alt=""><br>哈利</a>
+         <a href="https://www.hostwinds.com/" target="blank"><img src="img/hostwinds.png" width="64px" height="64px" alt=""><br>host</a>
+         <a href="https://www.vpsor.cn/" target="blank"><img src="img/vpsor.png" width="64px" height="64px" alt=""><br>vpsor</a>
+      </div>
+      <!--导航4各种工具-->
+      <div class="nav4">
+         <div class="nav-text"><h3><b>Tools</b></h3></div>
+      </div>
+      <div id="navimg2">
+         <a href="https://ikuai.myhome007.com:12107" target="blank"><img src="img/ikuai.png" width="64px" height="64px" alt=""><br>Master</a>
+         <a href="https://op.xztime.wang:12107" target="blank"><img src="img/op.png" width="64px" height="64px" alt=""><br>openwrt</a>
+         <a href="https://ikuai20.xztime.wang:12107" target="blank"><img src="img/ikuai.png" width="64px" height="64px" alt=""><br>Ikuai10</a>
+         <a href="https://lucky.xztime.wang:12107" target="blank"><img src="img/lucky.png" width="64px" height="64px" alt=""><br>Lucky(ipv6)</a>
+         <a href="https://lucky.xztime.net:12107" target="blank"><img src="img/lucky.png" width="64px" height="64px" alt=""><br>xztime</a>
+         <a href="https://lucky.myhome007:12107" target="blank"><img src="img/lucky.png" width="64px" height="64px" alt=""><br>Home</a>
+         <a href="https://op.myhome007.com:12107" target="blank"><img src="img/op.png" width="64px" height="64px" alt=""><br>Master</a>
+         <a href="https://ikuai.xztime.net:12107" target="blank"><img src="img/ikuai.png" width="64px" height="64px" alt=""><br>xztime</a>
+         <a href="https://nps.xztime.net:12107" target="blank"><img src="img/nps.png" width="64px" height="64px" alt=""><br>nps</a>
+      </div>
+      <!--导航5我的NAS-->
+      <div class="nav5">
+         <div class="nav-text"><h3><b>Nas</b></h3></div>
+      </div>
+      <div id="navimg2">
+         <a href="https://homelab.myhome007.com:12107" target="blank"><img src="img/nas1.png" width="64px" height="64px" alt=""><br>Master</a>
+         <a href="https://nas.myhome007.com:12107" target="blank"><img src="img/nas1.png" width="64px" height="64px" alt=""><br>DataHome</a>
+         <a href="https://www.myhome007.com:2012" target="blank"><img src="img/nas2.png" width="64px" height="64px" alt=""><br>BackI(ipv4)</a>
+         <a href="https://nas.xztime.wang:12107" target="blank"><img src="img/nas2.png" width="64px" height="64px" alt=""><br>BackII(ipv6)</a>
+         <a href="https://nas216.xztime.net:12107" target="blank"><img src="img/nas3.png" width="64px" height="64px" alt=""><br>BackII(216)</a>
+         <a href="https://town.xztime.net:12107" target="blank"><img src="img/nas3.png" width="64px" height="64px" alt=""><br>BackII(town)</a>
+         <a href="https://www.xztime.net:2030" target="blank"><img src="img/nas1.png" width="64px" height="64px" alt=""><br>OFFNas</a>
+      </div>
+      <!--页脚部分显示-->
+      <div class="footer">
+         <br>
+         <br>
+         <a href="https://home.xztime.net:12107">©2020-2027 CopyRight By Small-town Man</a></div>
+    </div>
+   </body>
+</html>
